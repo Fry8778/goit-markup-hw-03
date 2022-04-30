@@ -13,6 +13,10 @@ body {
     color: var(--primery-text-color);
 }
 
+.list {
+    list-style: none;
+}
+
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     padding: 0;
@@ -21,9 +25,6 @@ h1,h2,h3,h4,h5,h6,p {
 ul {
     margin: 0;
     padding: 0;
-}
-
-.list {
     list-style: none;
 }
 
@@ -32,8 +33,11 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     margin-left:  auto;
-    margin-right: auto;
-    outline: 1px solid tomato;
+    margin-right: auto;    
+}
+
+.page-header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 img {
@@ -41,6 +45,14 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/*Main nav*/
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 /*Title*/
 
 .title {    
@@ -107,7 +119,7 @@ img {
 
 /*Main Div*/
 
-.main-div {
+.container-main-div {
     display: flex;
     align-items: center;
 
@@ -401,13 +413,15 @@ img {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
+  
     margin-right: -30px;
+    margin-bottom: -30px;
  }
 
 .portfolio-list-card {
      width: calc((100% - 90px) / 3);
      margin-right: 30px;
+     margin-bottom: 30px;
 }
 
 .portfolio-list-card.link {
@@ -443,6 +457,7 @@ img {
     border-radius: 4px;
     border: none;
     text-align: center;
+    
     cursor: pointer;
     color: var(--title-text-color);
     background-color: #f5f4fa;
