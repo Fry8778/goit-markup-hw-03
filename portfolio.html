@@ -33,20 +33,21 @@
     </header>
     <main>
         <!--Portfolio-->
-        <section class="section">
+        <section class="section-our-work">
             <div class="container">
-                <h1 class="title">Наши работы</h1>
+                <h1 class="title-visually-hidden">Наши работы</h1>
                 <ul class="filter-list">
-                    <li><button type="button" class="work">Все</button></li>
-                    <li><button type="button" class="work">Веб-сайты</button></li>
-                    <li><button type="button" class="work">Приложения</button></li>
-                    <li><button type="button" class="work">Дизайн</button></li>
-                    <li><button type="button" class="work">Маркетинг</button></li>
-                </ul>           
+                    <li class="radio"><button type="button" class="work">Все</button></li>
+                    <li class="radio"><button type="button" class="work">Веб-сайты</button></li>
+                    <li class="radio"><button type="button" class="work">Приложения</button></li>
+                    <li class="radio"><button type="button" class="work">Дизайн</button></li>
+                    <li class="radio"><button type="button" class="work">Маркетинг</button></li>
+                </ul>  
+           
                 <ul class="portfolio-list">
                     <li class="portfolio-list-card">
                         <a href="@" class="link"><img src="images-portfolio/tehnokryak.jpg" alt="Tehnokryak" width="370" height="294"/> 
-                            <div class="card text">
+                            <div class="card-text">
                                 <h2 class="title">Технокряк</h2>
                                 <p class="function">Веб-сайт</p>
                             </div>
@@ -54,7 +55,7 @@
                     </li>
                     <li class="portfolio-list-card">
                         <a href="@" class="link"><img src="images-portfolio/new-orlean.jpg" alt="Poster New Orlean vs Golden star" width="370" height="294"/>
-                            <div class="card text">
+                            <div class="card-text">
                                 <h2 class="title">Постер New Orlean vs Golden star</h2>
                                 <p class="function">Дизайн</p>
                             </div>
@@ -62,7 +63,7 @@
                     </li>
                     <li class="portfolio-list-card">
                         <a href="@" class="link"><img src="images-portfolio/sea-food.jpg" alt="Poster fish restorant" width="370" height="294"/>
-                            <div class="card text">
+                            <div class="card-text">
                                 <h2 class="title">Ресторан Seafood</h2>
                                 <p class="function">Приложение</p>
                             </div>
@@ -70,7 +71,7 @@
                     </li>
                     <li class="portfolio-list-card">
                         <a href="@" class="link"><img src="images-portfolio/headphones.jpg" alt="Headphones" width="370" height="294"/>
-                            <div class="card text">
+                            <div class="card-text">
                                 <h2 class="title">Проект Prime</h2>
                                 <p class="function">Маркетинг</p>
                             </div>
@@ -78,7 +79,7 @@
                     </li>
                     <li class="portfolio-list-card">
                         <a href="@" class="link"><img src="images-portfolio/boxes.jpg" alt="Boxes" width="370" height="294"/>
-                            <div class="card text">
+                            <div class="card-text">
                                 <h2 class="title">Проект Boxes</h2>
                                 <p class="function">Приложение</p>
                             </div>
@@ -86,15 +87,15 @@
                     </li>
                     <li class="portfolio-list-card">
                         <a href="@" class="link"><img src="images-portfolio/monitor.jpg" alt="Monitor" width="370" height="294"/>
-                            <div class="card text">
+                            <div class="card-text">
                                 <h2 class="title">Inspiration has no Borders</h2>
                                 <p class="function">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="card">
+                    <li class="portfolio-list-card">
                         <a href="@" class="link"><img src="images-portfolio/book.jpg" alt="Book pages" width="370" height="294"/>
-                            <div class="card text">
+                            <div class="card-text">
                                 <h2 class="title">Издание Limited Edition</h2>
                                 <p class="function">Дизайн</p>
                             </div>
@@ -102,7 +103,7 @@
                     </li>
                     <li class="portfolio-list-card">
                         <a href="@" class="link"><img src="images-portfolio/tag.jpg" alt="Lab El Tag" width="370" height="294"/>
-                            <div class="card text">
+                            <div class="card-text">
                                 <h2 class="title">Проект LAB</h2>
                                 <p class="function">Маркетинг</p>
                             </div>
@@ -110,7 +111,7 @@
                     </li>
                     <li class="portfolio-list-card">
                         <a href="@" class="link"><img src="images-portfolio/laptop.jpg" alt="Laptop" width="370" height="294"/>
-                            <div class="card text">
+                            <div class="card-text">
                                 <h2 class="title">Growing business</h2>
                                 <p class="function">Приложение</p>
                             </div>
@@ -124,11 +125,12 @@
     <footer class="footer">
         <div class="container">
             <a href="./index.html" class="logo-down">Web<span class="down-white">Studio</span></a>
-            <address>
+            <address class="footer-address">
                 <ul class="bottom list">
-                    <li><a href="г.Киев,пр-тЛесиУкраинки,26" class="town">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-                    <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+                    <li class="bottom-box"><a href="г.Киев,пр-тЛесиУкраинки,26" class="town">г. Киев, пр-т Леси Украинки,
+                            26</a></li>
+                    <li class="bottom-box"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
+                    <li class="bottom-box"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
                 </ul>
             </address>
         </div>
