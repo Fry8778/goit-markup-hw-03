@@ -437,6 +437,7 @@ img {
  }
 
 .filter-list {
+    margin-bottom: 50px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -445,8 +446,7 @@ img {
 
 
 
-.filter-list .work {
-    margin-bottom: 50px; 
+.filter-list .work {    
     padding: 6px 22px; 
 
     font-family: inherit;
