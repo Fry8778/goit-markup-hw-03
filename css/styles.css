@@ -185,16 +185,88 @@ img {
 .auth-nav .link:focus {
     color: var(--accent-color);
 }
+/*BUTTON-ICON-SPRITE*/
+.envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.mobile {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.idea {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+.intime {
+    width: 70px;
+    height: 70px;
+}
+
+.plan {
+    width: 70px;
+    height: 70px;
+}
+
+.modern {
+    width: 70px;
+    height: 70px;
+}
+.social-media {
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}    
+
+.instagram {
+    width: 20px;
+    height: 20px;
+}
+
+.twitter {
+    width: 20px;
+    height: 20px;
+}
+
+.facebook {
+    width: 20px;
+    height: 20px;
+}
+
+.linkedin {
+    width: 20px;
+    height: 20px;
+}
+
 
 /*Hero*/
 
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
-  
-    
+    text-align: center; 
     background-color: #2F303A;
+
+    display: block;    
+    background-size:cover;
+    background-position: center; 
+    background-repeat: no-repeat;   
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/workspace.jpg");
+
 }
 
 .hero-title {

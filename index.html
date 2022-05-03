@@ -26,16 +26,22 @@
                 </ul>
             </nav>
             <ul class="auth-nav list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <li class="item"><a href="mailto:info@devstudio.com" class="link"><svg class="envelope">
+                    <use href="./images/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+                </li>
+                <li class="item"><a href="tel:+380961111111" class="link"><svg class="mobile">
+                    <use href="./images/sprite.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
     <main>
         <!--Герой-->
-        <section class="hero">          
+        <section class="hero">   
+            <div class="hero-business">      
                 <h1 class="hero-title">Эффективные решения <br/> для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>          
+                <button type="button" class="button">Заказать услугу</button> 
+             </div>
         </section>        
         <!--Преимущества-->
         <section class="section-benefits">
@@ -43,22 +49,40 @@
                 <h2 class="section-title-ghost">Наши преимущества</h2>
                 <ul class="features-list">
                     <li class="features-list-benefits">
-                        <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                        <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        <div>
+                                <svg class="idea"><use href="./images/sprite.svg#icon-antenna"></use></svg>
+                        </div>
+                         <div class="details">
+                                <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                                 <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                         </div>
                     </li>
                     <li class="features-list-benefits">
-                        <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
-                        <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-                        </p>
+                         <div>
+                                <svg class="intime"><use href="./images/sprite.svg#icon-clock"></use></svg>
+                         </div>
+                        <div>
+                                <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
+                                <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        </div>
                     </li>
                     <li class="features-list-benefits">
-                        <h3 class="title">ПЛАНИРОВАНИЕ</h3>
-                        <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.
-                        </p>
+                        <div>
+                                <svg class="plan"><use href="./images/sprite.svg#icon-diagram"></use></svg>
+                        </div>
+                         <div>
+                                <h3 class="title">ПЛАНИРОВАНИЕ</h3>
+                                <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                         </div>
                     </li>
                     <li class="features-list-benefits">
-                        <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                        <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <div>
+                                <svg class="modern"><use href="./images/sprite.svg#icon-astronaut"></use></svg>
+                         </div>
+                        <div>
+                                <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                                 <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -84,13 +108,32 @@
                              <div class="worker">
                                 <h3 class="staff-name">Игорь Демьяненко</h3>
                                 <p class="staff-position">Product Designer</p>
-                            </div>
-                    </li>
+                                <ul class="social-media">
+                                    <li><a href="@"><svg class="instagram"><use href="./images/sprite.svg#icon-instagram"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="twitter"><use href="./images/sprite.svg#icon-twitter"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="facebook"><use href="./images/sprite.svg#icon-facebook"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="linkedin"><use href="./images/sprite.svg#icon-linkedin"></use></svg></a>
+                                    </li>
+                                </ul>
+                            </div>                                   
                     <li class="staff-category">
                         <img src="images/olga.jpg" alt="Woman. Developer. Olga" width="270" height="260" />
                             <div class="worker">
                                 <h3 class="staff-name">Ольга Репина</h3>
                                 <p class="staff-position">Frontend Developer</p>
+                                <ul class="social-media">
+                                    <li><a href="@"><svg class="instagram"><use href="./images/sprite.svg#icon-instagram"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="twitter"><use href="./images/sprite.svg#icon-twitter"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="facebook"><use href="./images/sprite.svg#icon-facebook"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="linkedin"><use href="./images/sprite.svg#icon-linkedin"></use></svg></a>
+                                    </li>
+                                </ul>
                             </div>
                     </li>
                     <li class="staff-category">
@@ -98,6 +141,16 @@
                             <div class="worker">
                                 <h3 class="staff-name">Николай Тарасов</h3>
                                 <p class="staff-position">Marketingr</p>
+                                <ul class="social-media">
+                                    <li><a href="@"><svg class="instagram"><use href="./images/sprite.svg#icon-instagram"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="twitter"><use href="./images/sprite.svg#icon-twitter"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="facebook"><use href="./images/sprite.svg#icon-facebook"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="linkedin"><use href="./images/sprite.svg#icon-linkedin"></use></svg></a>
+                                    </li>
+                                </ul>
                             </div>
                     </li>
                     <li class="staff-category">
@@ -105,10 +158,32 @@
                             <div class="worker">
                                 <h3 class="staff-name">Михаил Ермаков</h3>
                                 <p class="staff-position">UI Designer</p>
+                                <ul class="social-media">
+                                    <li><a href="@"><svg class="instagram"><use href="./images/sprite.svg#icon-instagram"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="twitter"><use href="./images/sprite.svg#icon-twitter"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="facebook"><use href="./images/sprite.svg#icon-facebook"></use></svg></a>
+                                    </li>
+                                    <li><a href="@"><svg class="linkedin"><use href="./images/sprite.svg#icon-linkedin"></use></svg></a>
+                                    </li>
+                                </ul>
                             </div>
                     </li>
                 </ul>
             </div>
+        </section>
+        <!--Постоянные клиенты-->
+        <section>
+            <h2>Постоянные клиенты</h2>
+            <ul>
+                <li><a href="@"><svg class="instagram"><use href="./images/sprite.svg#icon-Logo1"></use></svg></a></li>
+                <li><a href="@"><svg class="instagram"><use href="./images/sprite.svg#icon-Logo2"></use></svg></a></li>
+                <li><a href="@"><svg class="instagram"><use href="./images/sprite.svg#icon-Logo3"></use></svg></a></li>
+                <li><a href="@"><svg class="instagram"><use href="./images/sprite.svg#icon-Logo4"></use></svg></a></li>
+                <li><a href="@"><svg class="instagram"><use href="./images/sprite.svg#icon-Logo5"></use></svg></a></li>
+                <li><a href="@"><svg class="instagram"><use href="./images/sprite.svg#icon-Logo6"></use></svg></a></li>
+            </ul>        
         </section>
     </main>
     <!--Футер-->
@@ -120,6 +195,25 @@
                     <li class="bottom-box"><a href="г.Киев,пр-тЛесиУкраинки,26" class="town">г. Киев, пр-т Леси Украинки, 26</a></li>
                     <li class="bottom-box"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
                     <li class="bottom-box"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+                </ul>
+                <p>ПРИСОЕДИНЯЙТЕСЬ</p>
+                <ul class="social-media">
+                    <li><a href="@"><svg class="instagram">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li><a href="@"><svg class="twitter">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                    <li><a href="@"><svg class="facebook">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li><a href="@"><svg class="linkedin">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
                 </ul>
             </address>
         </div>
