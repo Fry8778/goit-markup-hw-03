@@ -178,6 +178,8 @@ img {
 } 
 
 .auth-nav .link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -230,7 +232,7 @@ img {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     
     
@@ -373,11 +375,12 @@ img {
     fill:#AFB1B8;
 }
 
-.social-link:hover .icon {
+.social-link:hover .icon,
+.social-link:focus .icon{
     fill: var(--primery-white-color)
 }
 
-.icon:hover 
+.icon:hover, 
 .icon:focus{
     fill: var(--primery-white-color)
 }
@@ -446,18 +449,12 @@ img {
 }
 
 /*Constant clients*/
-
-.promo {
-    fill: #AFB1B8;
-    
-
-}
-
+  
 .clients {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -30px;
+    
 }
 
 .section-constant {
@@ -465,50 +462,76 @@ img {
     padding-bottom: 94px;
 }
 
-.company-friend {
-    width: calc((100% - 180px) / 6);
+.visitor {
+    flex-basis: calc(100% / 6 - 30px);
+
+}
+
+.visitor:not(:last-child) {
     margin-right: 30px;
 }
 
-.visitor {
+
+
+.promo {
+    fill: #AFB1B8;
+
+}
+
+
+
+.part-style {
+   
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    width: 170px;
-    height: 92px;
-    margin-bottom: 30px;
+    align-items: center; 
+    
+     width: 100%;
+     height: 92px;    
     background-color: #F5F4FA;
     border-radius: 4px;
-    border: 1px solid #AFB1B8;
+        border: 1px solid #AFB1B8;
     background-color: var(--primery-white-color);
+}
+
+.part-style:hover .promo,
+.part-style:focus .promo{
+    fill: var(--accent-color);
+
 
 }
 
-.part:hover .promo,
-.part:focus .promo{
-    color: var(--accent-color);
-}
-
-
-.visitor:hover,
-.visitor:focus{
+.part-style:hover,
+.part-style:focus{
     border-color: var(--accent-color);
-    
-}
-    
 
 }
+
+
 
 /*Footer*/
 
+.conect {
+    margin-right: 70px;
+}
+
 .footer-container {
-    display: flex; 
-   
+    display: flex;  
+    align-items: baseline;     
+}
+
+.icon-foot {
+    fill: var(--primery-white-color)
 }
 
 .join-up {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;   
     color: var(--primery-white-color);
+    margin-bottom: 20px;
 
 }
 .footer {
@@ -575,9 +598,7 @@ img {
 .bottom .link:focus {
     color: var(--accent-color);
 }
-.icon-foot {
-    fill: var(--primery-white-color)
-}
+
 
 /*PAGE PORTFOLIO*/
 
